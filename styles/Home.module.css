@@ -1,0 +1,29 @@
+.social_icons a{
+    font-size: 28px;
+    margin: 15px 3px;
+    color: #000;
+}
+
+.menu_items a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.line{
+    height: 5px;
+    margin: 10px 0;
+    background: #000;
+}
+
+.brand_logo{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.brand_logo img{
+  height: 100%;
+  width: 100%;
+}

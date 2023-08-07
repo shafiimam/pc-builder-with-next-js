@@ -1,27 +1,110 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+#components-dropdown-demo-arrow .ant-btn {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+.ant-row-rtl #components-dropdown-demo-arrow .ant-btn {
+  margin-right: 0;
+  margin-bottom: 8px;
+  margin-left: 8px;
+}
+.carousel_product {
+  display: flex;
+  background-color: white;
+  flex-direction: row;
+}
+.product-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product-info * {
+  margin: 0;
+}
+.image_wrapper {
+  flex: 1;
+}
+.image_wrapper img {
+  width: 100%;
+  height: 100%;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.ant-carousel .slick-prev,
+.ant-carousel .slick-next,
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-next:hover,
+.ant-carousel .slick-prev:focus,
+.ant-carousel .slick-next:focus {
+  font-size: inherit;
+  color: currentColor !important;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.ant-carousel .slick-prev::before {
+  color: currentColor !important;
+}
+
+.slick-arrow.slick-prev {
+  font-size: 20px !important;
+}
+
+.ant-carousel .slick-next::before {
+  color: currentColor !important;
+}
+
+.slick-arrow.slick-next {
+  font-size: 20px !important;
+}
+
+.cards-container {
+  display: flex;
+  gap: 10px;
+}
+.category-image {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.category-name {
+  position: relative;
+  text-align: center;
+  top: -67%;
+  background: -webkit-linear-gradient(#ffffff, #143562);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.product-image  {
+    flex: 1;
+    width: 50%;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-image  img {
+    width: 100%;
+}
+
+.products-container{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+
+.ant-card-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ant-card-body p{
+  margin: 4px 0;
 }

@@ -1,0 +1,43 @@
+.ant-layout-header{
+  height: auto !important;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  flex: 1;
+}
+
+.logo img {
+  height: 50px;
+  width: 50px;
+} 
+.logo-container{
+  height: 100%;
+}
+.nav-items {
+  display: flex;
+  align-items: center;
+}
+.nav-items > * {
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+  }
+
+  .nav-items {
+    margin-top: 10px;
+  }
+
+  .nav-items > * {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+}
