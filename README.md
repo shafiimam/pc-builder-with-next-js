@@ -1,4 +1,4 @@
-# Assignment 6: Simple PC Builder Website using Next.Js (Frontend Category)
+#Simple PC Builder Website using Next.Js (Frontend Category)
 
 ### Main Part:
 
